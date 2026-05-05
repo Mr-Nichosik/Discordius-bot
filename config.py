@@ -8,13 +8,13 @@ TOKEN = os.getenv("TOKEN")
 
 PREFIX = os.getenv("PREFIX")
 
-CHAT_CHANNELS_IDS = (int(x) for x in os.getenv("CHAT_CHANNELS_IDS").split(","))
+CHAT_CHANNELS_IDS = [int(x) for x in os.getenv("CHAT_CHANNELS_IDS").split(",")]
 ROLES_CHANNEL_ID = int(os.getenv("ROLES_CHANNEL_ID"))
 ROLES_MESSAGE_ID = int(os.getenv("ROLES_MESSAGE_ID"))
 MAX_ROLES = int(os.getenv("MAX_ROLES"))
 
 PRIVILEGED_ROLES_IDS = [int(x) for x in os.getenv("PRIVILEGED_ROLES_IDS").split(",")]
-BAD_ROLES_IDS = (int(x) for x in os.getenv("BAD_ROLES_IDS").split(","))
+BAD_ROLES_IDS = [int(x) for x in os.getenv("BAD_ROLES_IDS").split(",")]
 
 ROLES = {
     "<:Nichosi_1:823894832068952144>": 838042973463248927, # ничоси
@@ -98,13 +98,13 @@ HI_WORDS = (
 )
 
 ANSWERS = (
-    "Утро доброе",
-    "Привет",
-    "Типа здрасьте",
-    "Дароу",
-    "Приветствую",
-    "День добрый",
-    "Ку",
+    "утро доброе",
+    "привет",
+    "типа здрасьте",
+    "дароу",
+    "приветствую",
+    "день добрый",
+    "ку",
 )
 
 NICHOSI_ATTACK_WORDS = (

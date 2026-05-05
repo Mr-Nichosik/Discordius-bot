@@ -1,10 +1,6 @@
 
-import os
-import sys
 from discord.ext import commands
 import config
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class Moderation(commands.Cog):
     def __init__(self, bot):

@@ -1,11 +1,7 @@
 
-import os
-import sys
 import discord
 from discord.ext import commands
 import config
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class Roles(commands.Cog):
     def __init__(self, bot: commands.Bot):
