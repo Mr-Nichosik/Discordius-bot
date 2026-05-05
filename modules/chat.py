@@ -33,6 +33,9 @@ class ChatBot(commands.Cog):
                     for i in range(10):
                         await message.channel.send("<:Nichosi_1:823894832068952144>" * 10)
                     break
+            
+            if "<:Nichosi_1:823894832068952144>" in msg:
+                await message.channel.send("<:Nichosi_1:823894832068952144>")
 
             if msg == "пинг":
                 await message.channel.send("понг")
